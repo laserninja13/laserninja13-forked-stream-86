@@ -155,7 +155,7 @@ function nextWeapon () {
     currentWeapon = (currentWeapon + 1) % weapon_names.length
 }
 sprites.onDestroyed(SpriteKind.Enemy, function (sprite) {
-    if (Math.percentChance(100)) {
+    if (Math.percentChance(20)) {
         pu = sprites.create(img`
             5 . . . . . . . 
             . 5 . 5 5 . 5 . 
